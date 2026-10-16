@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyfr@Lab - Optimized Dual Compiler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <h2>🧬 Zyfr@Lab Dual Compiler (Optimized)</h2>
+    <p>Stream your list to build highly compressed, production-ready Dual Markov matrices.</p>
+
+    <div class="config-group">
+      <label for="pruneThreshold">Prune Trigrams Appearing Less Than:</label>
+      <select id="pruneThreshold">
+        <label>Recommended for 1mil lists</label>
+        <option value="1">1 Time (No Pruning)</option>
+        <option value="2">2 Times (Mild Compression)</option>
+        <option value="3" selected>3 Times (Aggressive Compression - Recommended)</option>
+        <option value="5">5 Times (Maximum Compression)</option>
+      </select>
+    </div>
+
+    <div class="file-input-wrapper">
+      <input type="file" id="filePicker" accept=".txt">
+    </div>
+
+    <div class="status-container" id="statusContainer">
+      <div class="status-text">
+        <span id="statusLabel">Initializing...</span>
+        <span id="progressLabel">0%</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progressBar"></div>
+      </div>
+      <div class="log-box" id="logBox"></div>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
